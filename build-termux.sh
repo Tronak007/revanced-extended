@@ -22,18 +22,18 @@ ask() {
 pr "Setting up environment..."
 yes "" | pkg update -y && pkg install -y git wget openssl jq openjdk-17 zip
 
-pr "Cloning revanced-magisk-module repository..."
-if [ -d revanced-magisk-module ]; then
-	if ask "Directory revanced-magisk-module already exists. Do you want to clone the repo again? [y/n]"; then
+pr "Cloning revanced-extended-magisk-module repository..."
+if [ -d revanced-extended-magisk-module ]; then
+	if ask "Directory revanced-extended-magisk-module already exists. Do you want to clone the repo again? [y/n]"; then
 		rm -rf revanced-magisk-module
-		git clone https://github.com/j-hc/revanced-magisk-module --recurse --depth 1
-		sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-magisk-module/config.toml
+		git clone https://github.com/MatadorProBr/revanced-extended-magisk-module --recurse --depth 1
+		sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-extended-magisk-module/config.toml
 	fi
 else
-	git clone https://github.com/j-hc/revanced-magisk-module --recurse --depth 1
-	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-magisk-module/config.toml
+	git clone https://github.com/MatadorProBr/revanced-extended-magisk-module --recurse --depth 1
+	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-extended-magisk-module/config.toml
 fi
-cd revanced-magisk-module
+cd revanced-extended-magisk-module
 
 if ask "Do you want to open the config.toml for customizations? [y/n]"; then
 	nano config.toml
@@ -53,13 +53,13 @@ until ls /sdcard >/dev/null 2>&1; do
 done
 
 PWD=$(pwd)
-mkdir ~/storage/downloads/revanced-magisk-module 2>/dev/null || :
+mkdir ~/storage/downloads/revanced-extended-magisk-module 2>/dev/null || :
 for op in *; do
 	[ "$op" = "*" ] && continue
-	cp -f "${PWD}/${op}" ~/storage/downloads/revanced-magisk-module/"${op}"
+	cp -f "${PWD}/${op}" ~/storage/downloads/revanced-extended-magisk-module/"${op}"
 done
 
 pr "Outputs are available in /sdcard/Download folder"
-am start -a android.intent.action.VIEW -d file:///sdcard/Download/revanced-magisk-module -t resource/folder
+am start -a android.intent.action.VIEW -d file:///sdcard/Download/revanced-extended-magisk-module -t resource/folder
 sleep 2
-am start -a android.intent.action.VIEW -d file:///sdcard/Download/revanced-magisk-module -t resource/folder
+am start -a android.intent.action.VIEW -d file:///sdcard/Download/revanced-extended-magisk-module -t resource/folder
