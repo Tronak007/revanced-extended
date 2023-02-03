@@ -49,13 +49,13 @@ jobs:
           }
 
           if ! git checkout update; then
-            echo "First time building!"
+            echo "first time building!"
             echo "SHOULD_BUILD=1" >> $GITHUB_OUTPUT
           elif is_patches_latest || is_youtube_latest; then
-            echo "Build!"
+            echo "build!"
             echo "SHOULD_BUILD=1" >> $GITHUB_OUTPUT
           else
-            echo "Dont build!"
+            echo "dont build!"
             echo "SHOULD_BUILD=0" >> $GITHUB_OUTPUT
           fi
 
