@@ -14,11 +14,11 @@ else
 fi
 set_perm_recursive $MODPATH/bin 0 0 0755 0777
 
-grep __PKGNAME /proc/mounts | while read -r line; do
+su -Mc grep __PKGNAME /proc/mounts | while read -r line; do
 	ui_print "* Un-mount"
 	mp=${line#* }
 	mp=${mp%% *}
-	umount -l ${mp%%\\*}
+	su -Mc umount -l ${mp%%\\*}
 done
 am force-stop __PKGNAME
 
@@ -66,12 +66,8 @@ RVPATH=$NVBASE/rvhc/__PKGNAME_rv.apk
 mv -f $MODPATH/base.apk $RVPATH
 
 if ! op=$(su -Mc mount -o bind $RVPATH $BASEPATH 2>&1); then
-	ui_print "$op"
-	ui_print "WARNING: Mount failed! Trying in non-global mountspace mode"
-	if ! op=$(mount -o bind $RVPATH $BASEPATH 2>&1); then
-		ui_print "ERROR: $op"
-		abort "Try flasing the module in official Magisk Manager app"
-	fi
+	ui_print "ERROR: Mount failed!"
+	abort "$op"
 fi
 am force-stop __PKGNAME
 ui_print "* Optimizing __PKGNAME"
