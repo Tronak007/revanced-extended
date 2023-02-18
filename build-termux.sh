@@ -22,10 +22,10 @@ ask() {
 pr "Setting up environment..."
 yes "" | pkg update -y && pkg install -y git wget openssl jq openjdk-17 zip
 
-pr "Cloning revanced-magisk-module repository..."
-if [ -d revanced-magisk-module ]; then
-	if ask "Directory revanced-magisk-module already exists. Do you want to clone the repo again and overwrite your config? [y/n]"; then
-		rm -rf revanced-magisk-module
+pr "Cloning revanced-extended-magisk-module repository..."
+if [ -d revanced-extended-magisk-module ]; then
+	if ask "Directory revanced-extended-magisk-module already exists. Do you want to clone the repo again and overwrite your config? [y/n]"; then
+		rm -rf revanced-extended-magisk-module
 		git clone https://github.com/MatadorProBr/revanced-extended-magisk-module --recurse --depth 1
 		sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-extended-magisk-module/config.toml
 	fi
@@ -35,7 +35,7 @@ else
 fi
 
 if [ ! -f build.sh ]; then
-	cd revanced-magisk-module
+	cd revanced-extended-magisk-module
 fi
 
 if ask "Do you want to open the config.toml for customizations? [y/n]"; then
@@ -64,7 +64,7 @@ for op in *; do
 	cp -f "${PWD}/${op}" ~/storage/downloads/revanced-extended-magisk-module/"${op}"
 done
 
-pr "Outputs are available in /sdcard/Download/revanced-magisk-module folder"
-am start -a android.intent.action.VIEW -d file:///sdcard/Download/revanced-magisk-module -t resource/folder
+pr "Outputs are available in /sdcard/Download/revanced-extended-magisk-module folder"
+am start -a android.intent.action.VIEW -d file:///sdcard/Download/revanced-extended-magisk-module -t resource/folder
 sleep 2
 am start -a android.intent.action.VIEW -d file:///sdcard/Download/revanced-extended-magisk-module -t resource/folder
