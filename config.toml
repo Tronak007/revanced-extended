@@ -11,7 +11,7 @@ integrations-source = "inotia00/revanced-integrations"
 rv-brand = "ReVanced Extended"
 
 # add 'enabled = false' for not patching a specific app
-[YouTube (Stable)]
+[YouTube-(Stable)]
 enabled = true
 build-mode = "both"                                                        # 'both', 'apk' or 'module'
 allow-alpha-version = true                                                 # allow downloading alpha versions from apkmirror
@@ -23,7 +23,7 @@ exclusive-patches = false                                                  # exc
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "ytsrvx-magisk"
 
-[YouTube (Latest)]
+[YouTube-(Latest)]
 enabled = true
 build-mode = "both"
 allow-alpha-version = true
