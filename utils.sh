@@ -121,7 +121,7 @@ set_prebuilts() {
 	HTMLQ="${TEMP_DIR}/htmlq"
 }
 
-req() { wget -nv -O "$2" --header="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0" "$1"; }
+req() { wget -nv -O "$2" --header="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:110.0) Gecko/20100101 Firefox/110.0" "$1"; }
 gh_req() { wget -nv -O "$2" --header="$GH_HEADER" "$1"; }
 log() { echo -e "$1  " >>build.md; }
 get_largest_ver() {

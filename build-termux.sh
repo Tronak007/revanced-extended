@@ -25,17 +25,17 @@ if [ ! -f ~/.rvmm_"$(date '+%Y%m')" ]; then
 	: >~/.rvmm_"$(date '+%Y%m')"
 fi
 
-pr "Cloning revanced-magisk-module repository..."
-if [ -d revanced-magisk-module ]; then
-	cd revanced-magisk-module
+pr "Cloning revanced-extended-magisk-module repository..."
+if [ -d revanced-extended-magisk-module ]; then
+	cd revanced-extended-magisk-module
 	git fetch
 	git rebase -X ours
 elif [ -f build.sh ]; then
 	git fetch
 	git rebase -X ours
 else
-	git clone https://github.com/j-hc/revanced-magisk-module --recurse --depth 1
-	cd revanced-magisk-module
+	git clone https://github.com/MatadorProBr/revanced-extended-magisk-module --recurse --depth 1
+	cd revanced-extended-magisk-module
 	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' config.toml
 fi
 
@@ -58,7 +58,7 @@ do
 done
 
 PWD=$(pwd)
-mkdir -p ~/storage/downloads/revanced-magisk-module
+mkdir -p ~/storage/downloads/revanced-extended-magisk-module
 for op in *; do
 	[ "$op" = "*" ] && continue
 	cp -f "${PWD}/${op}" ~/storage/downloads/revanced-extended-magisk-module/"${op}"
