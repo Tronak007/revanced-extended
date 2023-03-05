@@ -26,23 +26,23 @@ if [ ! -f ~/.rvmm_"$(date '+%Y%m')" ]; then
 fi
 
 if [ -f build.sh ]; then cd ..; fi
-if [ -d revanced-magisk-module ]; then
-	pr "Checking for revanced-magisk-module updates"
-	git -C revanced-magisk-module fetch
-	if git -C revanced-magisk-module status | grep -q 'is behind'; then
-		pr "revanced-magisk-module already is not synced with upstream."
-		pr "Cloning revanced-magisk-module. config.toml will be preserved."
-		cp -f revanced-magisk-module/config.toml .
-		rm -rf revanced-magisk-module
-		git clone https://github.com/j-hc/revanced-magisk-module --recurse --depth 1
-		mv -f config.toml revanced-magisk-module/config.toml
+if [ -d revanced-extended-magisk-module ]; then
+	pr "Checking for revanced-extended-magisk-module updates"
+	git -C revanced-extended-magisk-module fetch
+	if git -C revanced-extended-magisk-module status | grep -q 'is behind'; then
+		pr "revanced-extended-magisk-module already is not synced with upstream."
+		pr "Cloning revanced-extended-magisk-module. config.toml will be preserved."
+		cp -f revanced-extended-magisk-module/config.toml .
+		rm -rf revanced-extended-magisk-module
+		git clone https://github.com/MatadorProBr/revanced-extended-magisk-module --recurse --depth 1
+		mv -f config.toml revanced-extended-magisk-module/config.toml
 	fi
 else
-	pr "Cloning revanced-magisk-module."
-	git clone https://github.com/j-hc/revanced-magisk-module --recurse --depth 1
-	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-magisk-module/config.toml
+	pr "Cloning revanced-extended-magisk-module."
+	git clone https://github.com/MatadorProBr/revanced-extended-magisk-module --recurse --depth 1
+	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-extended-magisk-module/config.toml
 fi
-cd revanced-magisk-module
+cd revanced-extended-magisk-module
 chmod +x build.sh build-termux.sh
 
 if ask "Do you want to open the config.toml for customizations? [y/n]"; then
