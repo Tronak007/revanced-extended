@@ -12,7 +12,18 @@ rv-brand = "ReVanced Extended"
 # add 'enabled = false' for not patching a specific app or remove its entry
 # see https://github.com/MatadorProBr/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
-[YouTube]
+[YouTube-stable]
+enabled = true
+build-mode = "both"                                                        # 'both', 'apk' or 'module'
+allow-alpha-version = true                                                 # allow downloading alpha versions from apkmirror
+excluded-patches = "custom-branding-icon-afn-red custom-branding-name"     # whitespace seperated list of patches to exclude (multiline strings are not supported)
+included-patches = "materialyou force-premium-heading"                     # whitespace seperated list of patches to include
+version = "auto"                                                           # 'auto', 'latest' or a custom one like '17.40.41'
+exclusive-patches = false                                                  # excludes all patches by default
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+module-prop-name = "ytsrvx-magisk"
+
+[YouTube-latest]
 enabled = true
 build-mode = "both"
 allow-alpha-version = true
