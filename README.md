@@ -12,7 +12,7 @@ Get the [latest CI release](https://github.com/MatadorProBr/revanced-extended-ma
 The [**mindetach module**](https://github.com/j-hc/mindetach-magisk) in the releases section detaches YouTube and YouTube Music from Play Store and blocks it from updating them.
 
 ## Features
- * Support all present and future [ReVanced Extended](https://github.com//inotia00/revanced-patches) apps
+ * Support all present and future [ReVanced Extended](https://github.com/inotia00/revanced-patches) apps
  * Can build Magisk modules and non-root APKs
  * Updated daily with the latest versions of apps and patches
  * Optimize APKs and modules for size
