@@ -40,8 +40,8 @@ if [ -d revanced-extended-magisk-module ]; then
 		mv -f config*toml revanced-extended-magisk-module/
 	fi
 else
-	pr "Cloning revanced-magisk-module."
-	git clone https://github.com/j-hc/revanced-magisk-module --recurse --depth 1
+	pr "Cloning revanced-extended-magisk-module."
+	git clone https://github.com/MatadorProBr/revanced-extended-magisk-module --recurse --depth 1
 	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-extended-magisk-module/config*toml
 fi
 cd revanced-extended-magisk-module
