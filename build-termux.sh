@@ -47,9 +47,6 @@ fi
 cd revanced-extended-magisk-module
 chmod +x build.sh build-termux.sh
 
-if ! ask "Select config (y=revanced n=revanced extended)"; then
-	CFG=config-rv-ex.toml
-fi
 if ask "Do you want to open the config for customizations? [y/n]"; then
 	nano $CFG
 fi
