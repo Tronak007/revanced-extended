@@ -34,7 +34,7 @@ Get the [latest CI release](https://github.com/MatadorProBr/revanced-extended-ma
  * Run the build [workflow](../../actions/workflows/build.yml)
  * Grab your modules and APKs from [releases](../../releases)
 
-also see here [`CONFIG.md`](./CONFIG.md)
+Also see here [`CONFIG.md`](./CONFIG.md).
 
 # Building Locally
 ## On Termux
