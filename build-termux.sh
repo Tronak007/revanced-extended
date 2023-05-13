@@ -19,8 +19,6 @@ ask() {
 	return 1
 }
 
-CFG=config.toml
-
 if [ ! -f ~/.rvmm_"$(date '+%Y%m')" ]; then
 	pr "Setting up environment..."
 	yes "" | pkg update -y && pkg install -y openssl git wget jq openjdk-17 zip
@@ -28,32 +26,32 @@ if [ ! -f ~/.rvmm_"$(date '+%Y%m')" ]; then
 fi
 
 if [ -f build.sh ]; then cd ..; fi
-if [ -d revanced-extended-magisk-module ]; then
+if [ -d revanced-magisk-module ]; then
 	pr "Checking for revanced-extended-magisk-module updates"
 	git -C revanced-extended-magisk-module fetch
 	if git -C revanced-extended-magisk-module status | grep -q 'is behind'; then
 		pr "revanced-extended-magisk-module already is not synced with upstream."
 		pr "Cloning revanced-extended-magisk-module. config.toml will be preserved."
-		cp -f revanced-extended-magisk-module/config*toml .
+		cp -f revanced-extended-magisk-module/config.toml .
 		rm -rf revanced-extended-magisk-module
 		git clone https://github.com/MatadorProBr/revanced-extended-magisk-module --recurse --depth 1
-		mv -f config*toml revanced-extended-magisk-module/
+		mv -f config.toml revanced-extended-magisk-module/config.toml
 	fi
 else
 	pr "Cloning revanced-extended-magisk-module."
 	git clone https://github.com/MatadorProBr/revanced-extended-magisk-module --recurse --depth 1
-	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-extended-magisk-module/config*toml
+	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-extended-magisk-module/config.toml
 fi
 cd revanced-extended-magisk-module
 chmod +x build.sh build-termux.sh
 
-if ask "Do you want to open the config for customizations? [y/n]"; then
-	nano $CFG
+if ask "Do you want to open the config.toml for customizations? [y/n]"; then
+	nano config.toml
 fi
 if ! ask "Setup is done. Do you want to start building? [y/n]"; then
 	exit 0
 fi
-./build.sh $CFG
+./build.sh
 
 cd build
 pr "Ask for storage permission"

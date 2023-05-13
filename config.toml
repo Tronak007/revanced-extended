@@ -2,16 +2,14 @@ logging-to-file = true        # enables logging of every patch process to a sepe
 enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
 build-mindetach-module = true
 
-# ReVanced Extended
+# add 'enabled = false' for not patching a specific app or remove it from the config
+# see https://github.com/MatadorProBr/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
+
+[YouTube-Stable]
+app-name = "YouTube"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 rv-brand = "ReVanced Extended"
-
-# add 'enabled = false' for not patching a specific app or remove its entry
-# see https://github.com/MatadorProBr/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
-
-[YouTube-stable]
-enabled = true
 build-mode = "both"                                                           # 'both', 'apk' or 'module'
 allow-alpha-version = true                                                    # allow downloading alpha versions from apkmirror
 excluded-patches = "custom-branding-icon-afn-red custom-branding-name"        # space-seperated patches to exclude (multiline strings are not supported)
@@ -19,18 +17,19 @@ included-patches = "materialyou force-premium-heading"                        # 
 version = "auto"                                                              # 'auto', 'latest', 'beta' or a custom one like '17.45.36'
 exclusive-patches = false                                                     # excludes all patches by default
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-module-prop-name = "ytsrvx-magisk"
 
-[YouTube-latest]
-enabled = true
-build-mode = "both"
-allow-alpha-version = true
-excluded-patches = "custom-branding-icon-afn-red custom-branding-name"
-included-patches = "materialyou force-premium-heading"
-version = "latest"
-exclusive-patches = false
+[YouTube-Latest]
+app-name = "YouTube"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+rv-brand = "ReVanced Extended"
+build-mode = "both"                                                           # 'both', 'apk' or 'module'
+allow-alpha-version = true                                                    # allow downloading alpha versions from apkmirror
+excluded-patches = "custom-branding-icon-afn-red custom-branding-name"        # space-seperated patches to exclude (multiline strings are not supported)
+included-patches = "materialyou force-premium-heading"                        # space-seperated patches to include (non-excluded patches are included by default)
+version = "latest"                                                            # 'auto', 'latest', 'beta' or a custom one like '17.45.36'
+exclusive-patches = false                                                     # excludes all patches by default
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-module-prop-name = "ytlrvx-magisk"
 
 [Music-arm64]
 build-mode = "both"
@@ -40,8 +39,8 @@ excluded-patches = "custom-branding-music-afn-red"
 included-patches = ""
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-arch = "arm64-v8a"
 module-prop-name = "ytmusicrvx-magisk"
+arch = "arm64-v8a"
 
 [Music-arm]
 build-mode = "both"
