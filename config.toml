@@ -6,7 +6,7 @@ build-mindetach-module = true
 # see https://github.com/MatadorProBr/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube-Stable]
-app-name = "YouTube"
+app-name = "YouTube (Stable)"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 rv-brand = "ReVanced Extended (Stable)"
@@ -19,7 +19,7 @@ exclusive-patches = false                                                     # 
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 
 [YouTube-Latest]
-app-name = "YouTube"
+app-name = "YouTube (Latest)"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 rv-brand = "ReVanced Extended (Latest)"
