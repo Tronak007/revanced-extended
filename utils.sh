@@ -48,7 +48,7 @@ get_rv_prebuilts() {
 	pr "Getting prebuilts ($prebuilts_dir)" >&2
 	local rv_cli_url rv_integrations_url rv_patches rv_patches_changelog rv_patches_dl rv_patches_url rv_patches_json
 
-	rv_cli_url=$(gh_req "https://api.github.com/repos/j-hc/revanced-cli/releases/latest" - | json_get 'browser_download_url') || return 1
+	rv_cli_url=$(gh_req "https://api.github.com/repos/inotia00/revanced-cli/releases/latest" - | json_get 'browser_download_url') || return 1
 	local rv_cli_jar="${prebuilts_dir}/${rv_cli_url##*/}"
 	echo "CLI: $(cut -d/ -f4 <<<"$rv_cli_url")/$(cut -d/ -f9 <<<"$rv_cli_url")  " >"$prebuilts_dir/changelog.md"
 
