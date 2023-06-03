@@ -31,7 +31,7 @@ version = "latest"                                                            # 
 exclusive-patches = false                                                     # excludes all patches by default
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 
-[Music-arm64]
+[Music]
 build-mode = "both"
 allow-alpha-version = true 
 app-name = "Music"
@@ -42,7 +42,11 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 module-prop-name = "ytmusicrvx-magisk"
 arch = "arm64-v8a"
 
-[Music-arm]
+[Music-Extended]
+app-name = "Music"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+rv-brand = "ReVanced Extended"
 build-mode = "both"
 allow-alpha-version = true
 app-name = "Music"
