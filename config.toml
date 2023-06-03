@@ -6,10 +6,9 @@ build-mindetach-module = true
 # see https://github.com/MatadorProBr/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube-Stable]
-app-name = "YouTube (Stable)"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
-rv-brand = "ReVanced Extended (Stable)"
+rv-brand = "ReVanced Extended"
 build-mode = "both"                                                           # 'both', 'apk' or 'module'
 allow-alpha-version = true                                                    # allow downloading alpha versions from apkmirror
 excluded-patches = "custom-branding-icon-afn-red custom-branding-name"        # space-seperated patches to exclude (multiline strings are not supported)
@@ -20,10 +19,9 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "ytrvx-magisk"
 
 [YouTube-Latest]
-app-name = "YouTube (Latest)"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
-rv-brand = "ReVanced Extended (Latest)"
+rv-brand = "ReVanced Extended"
 build-mode = "both"                                                           # 'both', 'apk' or 'module'
 allow-alpha-version = true                                                    # allow downloading alpha versions from apkmirror
 excluded-patches = "custom-branding-icon-afn-red custom-branding-name"        # space-seperated patches to exclude (multiline strings are not supported)
