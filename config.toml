@@ -8,7 +8,7 @@ build-mindetach-module = true
 [YouTube-Stable]
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
-rv-brand = "ReVanced Extended"
+rv-brand = "ReVanced Extended (Stable)"
 build-mode = "both"                                                           # 'both', 'apk' or 'module'
 allow-alpha-version = true                                                    # allow downloading alpha versions from apkmirror
 excluded-patches = "custom-branding-icon-afn-red custom-branding-name"        # space-seperated patches to exclude (multiline strings are not supported)
@@ -21,7 +21,7 @@ module-prop-name = "ytrvx-magisk"
 [YouTube-Latest]
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
-rv-brand = "ReVanced Extended"
+rv-brand = "ReVanced Extended (Latest)"
 build-mode = "both"                                                           # 'both', 'apk' or 'module'
 allow-alpha-version = true                                                    # allow downloading alpha versions from apkmirror
 excluded-patches = "custom-branding-icon-afn-red custom-branding-name"        # space-seperated patches to exclude (multiline strings are not supported)
@@ -34,7 +34,7 @@ module-prop-name = "ytrvx-magisk"
 [Music]
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
-rv-brand = "ReVanced Extended"
+rv-brand = "ReVanced Extended (Music)"
 build-mode = "both"
 allow-alpha-version = true
 excluded-patches = "custom-branding-music-afn-red"
