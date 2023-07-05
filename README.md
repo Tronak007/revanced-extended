@@ -30,7 +30,7 @@ Get the [latest CI release](https://github.com/MatadorProBr/revanced-extended-ma
 
  * Star the repo :eyes:
  * [Fork the repo](https://github.com/MatadorProBr/revanced-extended-magisk-module/fork) or use it as a template
- * Customize [`config.toml`](./config.toml)
+ * Customize [`config.toml`](./config.toml) by hand or using [rvmm-config-gen](https://j-hc.github.io/rvmm-config-gen/)
  * Run the build [workflow](../../actions/workflows/build.yml)
  * Grab your modules and APKs from [releases](../../releases)
 
