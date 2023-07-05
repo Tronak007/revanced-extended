@@ -15,6 +15,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "ytrvx-magisk"
 
 [YouTube-Latest]
+build-mode = "both"
 excluded-patches = "custom-branding-icon-afn-red custom-branding-name"
 included-patches = "materialyou force-premium-heading"
 version = "beta"
