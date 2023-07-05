@@ -6,25 +6,25 @@ build-mindetach-module = true
 # see https://github.com/MatadorProBr/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube]
-build-mode = "both"                                                           # 'both', 'apk' or 'module'
-excluded-patches = "custom-branding-icon-afn-red custom-branding-name"        # space-seperated patches to exclude (multiline strings are not supported)
-included-patches = "materialyou force-premium-heading"                        # space-seperated patches to include (non-excluded patches are included by default)
-version = "auto"                                                              # 'auto', 'latest', 'beta' or a custom one like '17.45.36'
-exclusive-patches = false                                                     # excludes all patches by default
+build-mode = "both"                                                                                                            # 'both', 'apk' or 'module'
+excluded-patches = "custom-branding-icon-revancify-blue custom-branding-icon-revancify-red custom-branding-youtube-name"       # space-seperated patches to exclude (multiline strings are not supported)
+included-patches = "add-splash-animation materialyou force-premium-heading"                                                    # space-seperated patches to include (non-excluded patches are included by default)
+version = "auto"                                                                                                               # 'auto', 'latest', 'beta' or a custom one like '17.45.36'
+exclusive-patches = false                                                                                                      # excludes all patches by default
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "ytrvx-magisk"
 
 [YouTube-Latest]
 build-mode = "both"
-excluded-patches = "custom-branding-icon-afn-red custom-branding-name"
-included-patches = "materialyou force-premium-heading"
+excluded-patches = "custom-branding-icon-revancify-blue custom-branding-icon-revancify-red custom-branding-youtube-name"
+included-patches = "add-splash-animation materialyou force-premium-heading"
 version = "beta"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "ytrvx-magisk"
 
 [Music]
 build-mode = "both"
-excluded-patches = "custom-branding-music-afn-red"
+excluded-patches = "custom-branding-icon-revancify-blue custom-branding-icon-revancify-red"
 included-patches = ""
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 module-prop-name = "ytmusicrvx-magisk"
