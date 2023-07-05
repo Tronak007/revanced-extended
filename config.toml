@@ -34,7 +34,7 @@ module-prop-name = "ytrvx-magisk"
 [Music]
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
-rv-brand = "ReVanced Extended (Music)"
+rv-brand = "ReVanced Extended"
 build-mode = "both"
 allow-alpha-version = true
 excluded-patches = "custom-branding-music-afn-red"
@@ -42,3 +42,7 @@ included-patches = ""
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 module-prop-name = "ytmusicrvx-magisk"
 arch = "both"
+
+[Reddit]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
