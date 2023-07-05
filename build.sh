@@ -57,7 +57,7 @@ set_prebuilts() {
 	local integrations_dir=${integrations_src%/*}
 	integrations_dir=${TEMP_DIR}/${integrations_dir//[^[:alnum:]]/}-rv
 
-	app_args[cli]=$(find "${TEMP_DIR}/jhc-rv" -name "revanced-cli-*.jar" -type f -print -quit 2>/dev/null) && [ "${app_args[cli]}" ] || return 1
+	app_args[cli]=$(find "${TEMP_DIR}/matado-rv" -name "revanced-cli-*.jar" -type f -print -quit 2>/dev/null) && [ "${app_args[cli]}" ] || return 1
 	app_args[integ]=$(find "$integrations_dir" -name "revanced-integrations-${integrations_ver:-*}.apk" -type f -print -quit 2>/dev/null) && [ "${app_args[integ]}" ] || return 1
 	app_args[ptjar]=$(find "$patches_dir" -name "revanced-patches-${patches_ver:-*}.jar" -type f -print -quit 2>/dev/null) && [ "${app_args[ptjar]}" ] || return 1
 	app_args[ptjs]=$(find "$patches_dir" -name "patches-${patches_ver:-*}.json" -type f -print -quit 2>/dev/null) && [ "${app_args[ptjs]}" ] || return 1
@@ -132,7 +132,7 @@ for table_name in $(toml_get_table_names); do
 	app_args[dpi]=$(toml_get "$t" dpi) || app_args[dpi]="nodpi"
 	table_name_f=${table_name,,}
 	table_name_f=${table_name_f// /-}
-	app_args[module_prop_name]=$(toml_get "$t" module-prop-name) || app_args[module_prop_name]="${table_name_f}-jhc"
+	app_args[module_prop_name]=$(toml_get "$t" module-prop-name) || app_args[module_prop_name]="${table_name_f}-matado"
 
 	if [ "${app_args[arch]}" = both ]; then
 		app_args[table]="$table_name (arm64-v8a)"
