@@ -17,7 +17,7 @@ module-prop-name = "ytrvx-magisk"
 [YouTube-Latest]
 excluded-patches = "custom-branding-icon-afn-red custom-branding-name"
 included-patches = "materialyou force-premium-heading"
-version = "latest"
+version = "beta"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "ytrvx-magisk"
 
