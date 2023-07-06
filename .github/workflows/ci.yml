@@ -41,7 +41,7 @@ jobs:
           }
 
           is_patches_latest() {
-            PATCHES_SRC=$(toml_get "$(toml_get_table "")" patches-source) || PATCHES_SRC="revanced/revanced-patches"
+            PATCHES_SRC=$(toml_get "$(toml_get_table "")" patches-source) || PATCHES_SRC="inotia00/revanced-patches"
             last_patches_url=$(gh_req https://api.github.com/repos/${PATCHES_SRC}/releases/latest - | json_get 'browser_download_url' | grep 'jar')
             last_patches=${last_patches_url##*/}
             cur_patches=$(sed -n "s/.*Patches: .*${PATCHES_SRC%%/*}\/\(.*\)/\1/p" build.md | xargs)
@@ -52,7 +52,7 @@ jobs:
           }
 
           is_integrations_latest() {
-            INTEGRATIONS_SRC=$(toml_get "$(toml_get_table "")" integrations-source) || INTEGRATIONS_SRC="revanced/revanced-integrations"
+            INTEGRATIONS_SRC=$(toml_get "$(toml_get_table "")" integrations-source) || INTEGRATIONS_SRC="inotia00/revanced-integrations"
             last_integrations_url=$(wget -nv --header="Authorization: token ${{ secrets.GITHUB_TOKEN }}" -O- https://api.github.com/repos/${INTEGRATIONS_SRC}/releases/latest | json_get 'browser_download_url' | grep 'apk')
             last_integrations=${last_integrations_url##*/}
             cur_integrations=$(sed -n 's/.*Integrations: \(.*\)/\1/p' build.md | xargs)
