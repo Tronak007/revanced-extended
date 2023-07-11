@@ -28,7 +28,7 @@ excluded-patches = "custom-branding-icon-revancify-blue custom-branding-icon-rev
 included-patches = ""
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 module-prop-name = "ytmusicrvx-magisk"
-arch = "both"
+apkmirror-arch = "both"                                                                        # both arm64-v8a and arm-v7a
 
 [Reddit]
 enabled = false
