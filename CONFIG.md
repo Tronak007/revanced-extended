@@ -17,7 +17,8 @@ There exists an example below with all defaults shown and all the keys explicitl
 parallel-jobs = 1 # amount of cores to use for parallel patching, if not set nproc is used
 patches-source = "inotia00/revanced-patches" # where to fetch patches bundle from. default: "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations" # where to fetch integrations from. default: "inotia00/revanced-integrations"
-rv-brand = "ReVanced Extended" # rebrand from 'ReVanced' to something different. default: "ReVanced Extended"
+cli-source = "inotia00/revanced-cli" # where to fetch cli from. default: "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended" # rebrand from 'ReVanced Extended' to something different. default: "ReVanced Extended"
 
 patches-version = "v2.111.4" # locks the patches version. default: latest available
 integrations-version = "v0.42.1" # locks the integrations version. default: latest available
