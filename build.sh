@@ -167,7 +167,7 @@ if music_t=$(toml_get_table "Music"); then music_mode=$(toml_get "$music_t" "bui
 if [ "$youtube_mode" != module ] || [ "$music_mode" != module ]; then
 	log "\n\nInstall [mMicroG](https://github.com/inotia00/mMicroG/releases) (recommended), [Vanced Extended MicroG](https://github.com/inotia00/VancedMicroG/releases) or [Vanced MicroG](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or YT Music"
 fi
-log "\n[revanced-magisk-module](https://github.com/MatadorProBr/revanced-extended-magisk-module)"
+log "\n[revanced-extended-magisk-module](https://github.com/MatadorProBr/revanced-extended-magisk-module)"
 log "---\nChangelog:"
 log "$(cat $TEMP_DIR/*-rv/changelog.md)"
 
