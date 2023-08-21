@@ -5,7 +5,7 @@
 [![Build Modules](https://github.com/MatadorProBr/revanced-extended-magisk-module/actions/workflows/build.yml/badge.svg)](https://github.com/MatadorProBr/revanced-extended-magisk-module/actions/workflows/build.yml)
 [![CI](https://github.com/MatadorProBr/revanced-extended-magisk-module/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/MatadorProBr/revanced-extended-magisk-module/actions/workflows/ci.yml)
 
-Extensive ReVanced Builder
+Extensive ReVanced Extended Builder
 
 Get the [latest CI release](https://github.com/MatadorProBr/revanced-extended-magisk-module/releases).
 
@@ -23,7 +23,7 @@ Get the [latest CI release](https://github.com/MatadorProBr/revanced-extended-ma
      * handle installation of the correct version of the stock app and all that
      * support Magisk and KernelSU
 
-#### **Note that the [CI workflow](../../actions/workflows/ci.yml) is scheduled to build the modules and APKs hourly using GitHub Actions if there is a change in ReVanced patches. You may want to disable it.**
+#### **Note that the [CI workflow](../../actions/workflows/ci.yml) is scheduled to build the modules and APKs hourly using GitHub Actions if there is a change in ReVanced Extended patches. You may want to disable it.**
 
 ## To include/exclude patches or patch more ReVanced Apps
 [**See the list of patches**](https://j-hc.github.io/rvmm-config-gen/)

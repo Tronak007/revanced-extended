@@ -36,7 +36,7 @@ DEF_INTEGRATIONS_VER=$(toml_get "$main_config_t" integrations-version) || DEF_IN
 DEF_PATCHES_SRC=$(toml_get "$main_config_t" patches-source) || DEF_PATCHES_SRC="YT-Advanced/ReX-patches"
 DEF_INTEGRATIONS_SRC=$(toml_get "$main_config_t" integrations-source) || DEF_INTEGRATIONS_SRC="YT-Advanced/ReX-integrations"
 DEF_CLI_SRC=$(toml_get "$main_config_t" cli-source) || DEF_CLI_SRC="inotia00/revanced-cli"
-DEF_RV_BRAND=$(toml_get "$main_config_t" rv-brand) || DEF_RV_BRAND="ReVanced Extended (ReX fork)"
+DEF_RV_BRAND=$(toml_get "$main_config_t" rv-brand) || DEF_RV_BRAND="ReVanced Extended ReX fork"
 # -- Main config --
 mkdir -p $TEMP_DIR $BUILD_DIR
 
