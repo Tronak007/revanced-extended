@@ -1,17 +1,11 @@
 [ {
-  "patchName" : "Custom branding Microg name",
-  "options" : [ {
-    "key" : "MicroGAppName",
-    "value" : "MicroG"
-  } ]
-}, {
   "patchName" : "Custom branding Music name",
   "options" : [ {
     "key" : "MusicLongName",
-    "value" : "ReVanced Music Extended"
+    "value" : "ReVanced Extended Music"
   }, {
     "key" : "MusicShortName",
-    "value" : "YTM Extended"
+    "value" : "RVX Music"
   } ]
 }, {
   "patchName" : "Custom branding YouTube name",
@@ -33,12 +27,6 @@
   }, {
     "key" : "MusicPackageName",
     "value" : "app.rvx.android.apps.youtube.music"
-  } ]
-}, {
-  "patchName" : "Reddit settings",
-  "options" : [ {
-    "key" : "RedditSettings",
-    "value" : false
   } ]
 }, {
   "patchName" : "Theme",
