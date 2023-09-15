@@ -34,8 +34,8 @@ LOGGING_F=$(toml_get "$main_config_t" logging-to-file) && vtf "$LOGGING_F" "logg
 DEF_PATCHES_VER=$(toml_get "$main_config_t" patches-version) || DEF_PATCHES_VER=""
 DEF_INTEGRATIONS_VER=$(toml_get "$main_config_t" integrations-version) || DEF_INTEGRATIONS_VER=""
 DEF_CLI_VER=$(toml_get "$main_config_t" cli-version) || DEF_CLI_VER=""
-DEF_PATCHES_SRC=$(toml_get "$main_config_t" patches-source) || DEF_PATCHES_SRC="YT-Advanced/ReX-patches"
-DEF_INTEGRATIONS_SRC=$(toml_get "$main_config_t" integrations-source) || DEF_INTEGRATIONS_SRC="YT-Advanced/ReX-integrations"
+DEF_PATCHES_SRC=$(toml_get "$main_config_t" patches-source) || DEF_PATCHES_SRC="inotia00/revanced-patches"
+DEF_INTEGRATIONS_SRC=$(toml_get "$main_config_t" integrations-source) || DEF_INTEGRATIONS_SRC="inotia00/revanced-integrations"
 DEF_CLI_SRC=$(toml_get "$main_config_t" cli-source) || DEF_CLI_SRC="inotia00/revanced-cli"
 DEF_RV_BRAND=$(toml_get "$main_config_t" rv-brand) || DEF_RV_BRAND="ReVanced Extended"
 # -- Main config --
@@ -47,7 +47,7 @@ if [ "$LOGGING_F" = true ]; then mkdir -p logs; fi
 
 #check_deps
 jq --version >/dev/null || abort "\`jq\` is not installed. install it with 'apt install jq' or equivalent"
-java --version >/dev/null || abort "\`openjdk 17\` is not installed. install it with 'apt install openjdk-17-jre-headless' or equivalent"
+java --version >/dev/null || abort "\`openjdk 17\` is not installed. install it with 'apt install openjdk-17-jre' or equivalent"
 zip --version >/dev/null || abort "\`zip\` is not installed. install it with 'apt install zip' or equivalent"
 # --
 get_prebuilts
@@ -161,6 +161,7 @@ for table_name in $(toml_get_table_names); do
 		app_args[table]="$table_name (arm-v7a)"
 		app_args[module_prop_name]="${app_args[module_prop_name]}-arm"
 		app_args[arch]="arm-v7a"
+		if ((idx >= PARALLEL_JOBS)); then wait -n; fi
 		idx=$((idx + 1))
 		build_rv_w
 	else
