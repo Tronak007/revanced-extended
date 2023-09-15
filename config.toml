@@ -13,6 +13,8 @@ version = "auto"                                                                
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 
 [Music]
+patches-source = "YT-Advanced/ReX-patches"
+integrations-source = "YT-Advanced/ReX-integrations"
 build-mode = "both"
 excluded-patches = "custom-branding-music-name custom-branding-icon-revancify-blue"
 included-patches = ""
