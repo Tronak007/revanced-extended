@@ -6,8 +6,6 @@ enable-magisk-update = true   # set this to false if you do not want to receive 
 # see https://github.com/MatadorProBr/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube]
-patches-source = "YT-Advanced/ReX-patches"
-integrations-source = "YT-Advanced/ReX-integrations"
 build-mode = "both"                                                                            # 'both', 'apk' or 'module'
 excluded-patches = "custom-branding-icon-revancify-blue custom-branding-youtube-name"          # space-seperated patches to exclude (multiline strings are not supported)
 included-patches = "add-splash-animation materialyou"                                          # space-seperated patches to include (non-excluded patches are included by default)
