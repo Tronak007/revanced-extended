@@ -15,7 +15,7 @@ There exists an example below with all defaults shown and all the keys explicitl
 
 ```toml
 parallel-jobs = 1 # amount of cores to use for parallel patching, if not set nproc is used
-patches-source = "inotia00/revanced-patches" # where to fetch patches bundle from. default: "YT-Advanced/ReX-patches"
+patches-source = "inotia00/revanced-patches" # where to fetch patches bundle from. default: "inotia00/ReX-patches"
 integrations-source = "inotia00/revanced-integrations" # where to fetch integrations from. default: "YT-Advanced/ReX-integrations"
 cli-source = "inotia00/revanced-cli" # where to fetch cli from. default: "j-hc/revanced-cli"
 rv-brand = "ReVanced Extended" # rebrand from 'ReVanced Extended' to something different. default: "ReVanced Extended"
