@@ -4,11 +4,13 @@ enable-magisk-update = true   # set this to false if you do not want to receive 
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/MatadorProBr/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
+# you can use rvmm-config-gen to generate a config
+
 [YouTube]
-build-mode = "both"                                                                         # 'both', 'apk' or 'module'
-excluded-patches = "'Custom branding YouTube name' 'Custom branding icon Revancify blue'"   # space-seperated patches to exclude (multiline strings are not supported)
-included-patches = "'Add splash animation' 'MaterialYou'"                                   # space-seperated patches to include (non-excluded patches are included by default)
-version = "auto"                                                                            # 'auto', 'latest', 'beta' or a custom one like '17.45.36'
+build-mode = "both"
+excluded-patches = "'Custom branding YouTube name' 'Custom branding icon Revancify blue'"
+included-patches = "'Add splash animation' 'MaterialYou'"
+version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 
 [Music]
