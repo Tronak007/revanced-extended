@@ -2,13 +2,14 @@ logging-to-file = true        # enables logging of every patch process to a sepe
 enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
-# see https://github.com/MatadorProBr/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
+# see https://github.com/AbakNacchan/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
 build-mode = "both"
-excluded-patches = "'Custom branding icon YouTube' 'Custom branding name YouTube'"
+excluded-patches = "'Announcements' 'Custom branding icon YouTube' 'Custom branding name YouTube'"
 included-patches = "'Add splash animation' 'MaterialYou'"
 version = "18.46.45"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+arch = "both"
