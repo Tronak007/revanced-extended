@@ -21,4 +21,3 @@ excluded-patches = "'Custom branding icon YouTube Music' 'Custom branding name Y
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 apkmirror-arch = "both"
 included-patches = "'Compact header' 'Permanent shuffle' 'Permanent repeat'"
-excluded-patches = "'Remove upgrade button'"
