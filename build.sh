@@ -187,7 +187,6 @@ fi
 if [ "$youtube_mode" != apk ] || [ "$music_mode" != apk ]; then
 	log "Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) module to detach YouTube and YT Music from Play Store"
 fi
-log "\n[revanced-extended-magisk-module](https://github.com/AbakNacchan/revanced-extended-magisk-module)"
 log "\nChangelog:"
 log "$(cat $TEMP_DIR/*-rv/changelog.md)"
 
