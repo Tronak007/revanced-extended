@@ -14,3 +14,9 @@ version = "18.46.45"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 arch = "both"
 apkmirror-arch = "both"
+
+[Music]
+build-mode = "both"
+excluded-patches = "'Custom branding icon YouTube Music' 'Custom branding name YouTube Music'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+apkmirror-arch = "both"
