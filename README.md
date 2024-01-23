@@ -28,7 +28,7 @@ Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is schedu
 ## To include/exclude patches or patch other apps
 [**See the list of patches**](https://j-hc.github.io/rvmm-config-gen/)
 
- * Star the repo :eyes:
+ * Star the repo
  * [Fork the repo](https://github.com/AbakNacchan/revanced-extended/fork) or use it as a template
  * Customize [`config.toml`](./config.toml) using [rvmm-config-gen](https://j-hc.github.io/rvmm-config-gen/)
  * Run the build [workflow](../../actions/workflows/build.yml)
