@@ -3,7 +3,7 @@
 
 ### Extensive ReVanced eXtended Builder
 
-Get the [latest CI release](https://github.com/MatadorProBr/revanced-extended-magisk-module/releases).
+※ Get the [latest CI release](https://github.com/MatadorProBr/revanced-extended-magisk-module/releases).
 
 Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube and YouTube Music from Play Store if you are using magisk modules. 
 
@@ -34,7 +34,7 @@ Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is schedu
  * Run the build [workflow](../../actions/workflows/build.yml)
  * Grab your modules and APKs from [releases](../../releases)
 
-Also see here [`CONFIG.md`](./CONFIG.md).
+Also see [`CONFIG.md`](./CONFIG.md).
 
 ## Building Locally
 ### On Termux
