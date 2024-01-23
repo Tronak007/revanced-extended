@@ -10,7 +10,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/inc/app"
 
 ## More about other options:
 
-There exists an example below with all defaults shown and all the keys explicitly set.  
+There is existing example below with all defaults shown and all the keys explicitly set.  
 **All keys are optional** (except for download urls) and are assigned to their default values if explicitly is not set.  
 
 ```toml
