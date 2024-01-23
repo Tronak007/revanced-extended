@@ -1,4 +1,4 @@
-## ReVanced eXtended Magisk Module
+## ReVanced eXtended
 [![CI](https://github.com/AbakNacchan/revanced-extended/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/AbakNacchan/revanced-extended/actions/workflows/ci.yml)
 
 ### Extensive ReVanced eXtended Builder
