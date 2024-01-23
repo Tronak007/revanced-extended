@@ -1,4 +1,4 @@
-[ }, {
+[ {
     "patchName" : "Custom double tap length",
     "options" : [ {
       "key" : "DoubleTapLengthArrays",
