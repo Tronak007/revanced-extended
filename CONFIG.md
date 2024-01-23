@@ -16,7 +16,7 @@ There exists an example below with all defaults shown and all the keys explicitl
 ```toml
 parallel-jobs = 1
 # Amount of cores to use for parallel patching, if not set nproc is used
-patches-source = "inotia00/revanced-patches
+patches-source = "inotia00/revanced-patches"
 # Where to fetch patches bundle from ― default: "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 # Where to fetch integrations from ― default: "inotia00/revanced-integrations"
