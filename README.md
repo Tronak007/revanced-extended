@@ -1,7 +1,7 @@
-### ReVanced eXtended Magisk Module
+## ReVanced eXtended Magisk Module
 [![CI](https://github.com/AbakNacchan/revanced-extended/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/AbakNacchan/revanced-extended/actions/workflows/ci.yml)
 
-## Extensive ReVanced Extended Builder
+### Extensive ReVanced eXtended Builder
 
 Get the [latest CI release](https://github.com/MatadorProBr/revanced-extended-magisk-module/releases).
 
