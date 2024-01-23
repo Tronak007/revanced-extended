@@ -35,7 +35,7 @@ cli-version = "v3.0.1"
 
 [App Name]
 app-name = "App"
-# If set, release name becomes App instead of Some-App ― default is same as table name, which is 'App'.
+# If set, release name becomes App instead of Some-App ― default is same as table name, which is 'App'
 enabled = true
 # Whether to build the app ― default: true
 version = "auto"
