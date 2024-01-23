@@ -14,20 +14,28 @@ There exists an example below with all defaults shown and all the keys explicitl
 **All keys are optional** (except for download urls) and are assigned to their default values if explicitly is not set.  
 
 ```toml
-parallel-jobs = 1 # amount of cores to use for parallel patching, if not set nproc is used
-patches-source = "inotia00/revanced-patches" # where to fetch patches bundle from. default: "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations" # where to fetch integrations from. default: "inotia00/revanced-integrations"
-cli-source = "inotia00/revanced-cli" # where to fetch cli from. default: "inotia00/revanced-cli"
+parallel-jobs = 1
+# Amount of cores to use for parallel patching, if not set nproc is used
+patches-source = "inotia00/revanced-patches
+# Where to fetch patches bundle from ― default: "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+# Where to fetch integrations from ― default: "inotia00/revanced-integrations"
+cli-source = "inotia00/revanced-cli"
+# Where to fetch cli from ― default: "inotia00/revanced-cli"
 # options like cli-source can also set per app
-rv-brand = "ReVanced eXtended" # rebrand from 'ReVanced eXtended' to something different. default: "ReVanced eXtended"
+rv-brand = "ReVanced eXtended"
+# Rebrand from 'ReVanced eXtended' to something different ― default: "ReVanced eXtended"
 
-patches-version = "v2.111.4" # locks the patches version. default: latest available
-integrations-version = "v0.42.1" # locks the integrations version. default: latest available
-cli-version = "v3.0.1" # locks the CLI version. default: latest available
+patches-version = "v2.111.4"
+# Use specific patches version ― default: latest available
+integrations-version = "v0.42.1"
+# Use specific integrations version ― default: latest available
+cli-version = "v3.0.1"
+# Use specific CLI version ― default: latest available
 
 [App Name]
 app-name = "App"
-# If set, release name becomes App instead of Some-App. default is same as table name, which is 'App' here.
+# If set, release name becomes App instead of Some-App ― default is same as table name, which is 'App'.
 enabled = true
 # Whether to build the app ― default: true
 version = "auto"
@@ -41,13 +49,14 @@ build-mode = "apk"
 # 'both', 'apk' or 'module' ― default: apk
 excluded-patches = "'Some Patch' 'Some Other Patch'"
 # Whitespace seperated list of patches to exclude
-included-patches = "'Patch something'"
+included-patches = "'Some Patch' 'Some Other Patch'"
 # Whitespace seperated list of patches to include, all default patches are included by default
-exclusive-patches = false # exclude all patches by default. default: false
+exclusive-patches = false
+# Exclude all patches by default ― default: false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/inc/app"
 uptodown-dlurl = "https://app.en.uptodown.com/android"
 apkmonk-dlurl = "https://www.apkmonk.com/app/com.app.app/"
-module-prop-name = "some-app-magisk"
+module-prop-name = "app-magisk"
 # Magisk module prop name.
 merge-integrations = false
 # Set false to never merge even when needed ― default: true
