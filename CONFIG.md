@@ -58,8 +58,6 @@ uptodown-dlurl = "https://app.en.uptodown.com/android"
 apkmonk-dlurl = "https://www.apkmonk.com/app/com.app.app/"
 module-prop-name = "app-magisk"
 # Magisk module prop name.
-merge-integrations = false
-# Set false to never merge even when needed ― default: true
 apkmirror-dpi = "360-480dpi"
 # Used to select apk variant from apkmirror ― default: nodpi
 apkmirror-arch = "arm64-v8a"
