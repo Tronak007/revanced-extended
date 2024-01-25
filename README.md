@@ -42,7 +42,7 @@ Also see [`CONFIG.md`](./CONFIG.md).
 bash <(curl -sSf https://raw.githubusercontent.com/AbakNacchan/revanced-extended/main/build-termux.sh)
 ```
 
-#### On Desktop
+### On Desktop
 ```console
 $ git clone https://github.com/AbakNacchan/revanced-extended
 $ cd revanced-extended
