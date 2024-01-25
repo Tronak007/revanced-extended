@@ -25,7 +25,7 @@ Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube
 Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is scheduled to build the modules and APKs everyday using GitHub Actions if there is a change in ReVanced patches. You may want to disable it.
 </details>
 
-## To include/exclude patches or to patch other apps
+### To include/exclude patches or to patch other apps
 [**See the list of patches**](https://j-hc.github.io/rvmm-config-gen/)
 
  * Star the repo
@@ -36,13 +36,13 @@ Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is schedu
 
 Also see [`CONFIG.md`](./CONFIG.md).
 
-## Building Locally
-### On Termux
+### Building Locally
+#### On Termux
 ```console
 bash <(curl -sSf https://raw.githubusercontent.com/AbakNacchan/revanced-extended/main/build-termux.sh)
 ```
 
-### On Desktop
+#### On Desktop
 ```console
 $ git clone https://github.com/AbakNacchan/revanced-extended
 $ cd revanced-extended
