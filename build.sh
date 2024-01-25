@@ -140,7 +140,6 @@ for table_name in $(toml_get_table_names); do
 	fi
 
 	app_args[include_stock]=$(toml_get "$t" include-stock) || app_args[include_stock]=true && vtf "${app_args[include_stock]}" "include-stock"
-	app_args[merge_integrations]=$(toml_get "$t" merge-integrations) || app_args[merge_integrations]=true && vtf "${app_args[merge_integrations]}" "merge-integrations"
 	app_args[dpi]=$(toml_get "$t" apkmirror-dpi) || app_args[dpi]="nodpi"
 	table_name_f=${table_name,,}
 	table_name_f=${table_name_f// /-}
