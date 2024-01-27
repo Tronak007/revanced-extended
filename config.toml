@@ -1,7 +1,4 @@
 enable-magisk-update = true
-patches-source = "revanced/revanced-patches"
-integrations-source = "revanced/revanced-integrations"
-cli-source = "revanced/revanced-cli"
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/AbakNacchan/revanced-extended/blob/revanced-extended/CONFIG.md for more detailed explanations
