@@ -17,6 +17,7 @@ apkmirror-arch = "arm64-v8a"
 [Music]
 build-mode = "both"
 excluded-patches = "'Custom branding icon YouTube Music' 'Custom branding name YouTube Music'"
+version = "latest"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 apkmirror-arch = "arm64-v8a"
 included-patches = "'Compact header' 'Permanent shuffle' 'Permanent repeat'"
