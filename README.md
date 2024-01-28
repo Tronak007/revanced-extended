@@ -1,5 +1,6 @@
 # The Future of ReVanced eXtended
 As of January 27th, ReVanced eXtended source is discontinued. However, instead of rushing to switch to original ReVanced, I will continue to provide updates until an incompatibility is found with the existing patch.
+
 [![CI](https://github.com/AbakNacchan/revanced-extended/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/AbakNacchan/revanced-extended/actions/workflows/ci.yml)
 
 ## Extensive ReVanced eXtended Builder
