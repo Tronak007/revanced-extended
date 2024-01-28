@@ -65,4 +65,4 @@ apkmirror-arch = "arm64-v8a"
 ```
 
 # Building ReVanced
-Use the [original project](https://github.com/j-hc/revanced-magisk-module) instead.
+Use the [original project](https://github.com/AbakNacchan/revanced-magisk-module) instead.
