@@ -66,7 +66,7 @@ PWD=$(pwd)
 mkdir -p ~/storage/downloads/revanced-extended
 for op in *; do
 	[ "$op" = "*" ] && continue
-	mv -f "${PWD}/${op}" ~/storage/downloads/revanced-extended-magisk-module/"${op}"
+	mv -f "${PWD}/${op}" ~/storage/downloads/revanced-extended/"${op}"
 done
 
 pr "Outputs are available in /sdcard/Download/revanced-extended-magisk-module folder"
