@@ -69,7 +69,6 @@ get_rv_prebuilts() {
 	echo "Integrations: $(cut -d/ -f4 <<<"$rv_integrations_url")/$(cut -d/ -f9 <<<"$rv_integrations_url")  " >>"$patches_dir/changelog.md"
 
 	rv_patches=$(gh_req "$rv_patches_rel" -) || return 1
-	# rv_patches_changelog=$(json_get 'body' <<<"$rv_patches" | sed 's/\(\\n\)\+/\\n/g')
 	rv_patches_dl=$(json_get 'browser_download_url' <<<"$rv_patches")
 	rv_patches_json="${patches_dir}/patches-$(json_get 'tag_name' <<<"$rv_patches").json"
 	rv_patches_url=$(grep 'jar' <<<"$rv_patches_dl")
@@ -78,9 +77,7 @@ get_rv_prebuilts() {
 	local nm
 	nm=$(cut -d/ -f9 <<<"$rv_patches_url")
 	echo "Patches: $(cut -d/ -f4 <<<"$rv_patches_url")/$nm  " >>"$patches_dir/changelog.md"
-	# shellcheck disable=SC2001
 	echo -e "[Changelog](https://github.com/${patches_src}/releases/tag/v$(sed 's/.*-\(.*\)\..*/\1/' <<<"$nm"))\n" >>"$patches_dir/changelog.md"
-	# echo -e "\n${rv_patches_changelog//# [/### [}\n---" >>"$patches_dir/changelog.md"
 
 	dl_if_dne "$rv_cli_jar" "$rv_cli_url" >&2 || return 1
 	dl_if_dne "$rv_integrations_apk" "$rv_integrations_url" >&2 || return 1
@@ -419,23 +416,6 @@ build_rv() {
 
 	local stock_bundle_apk="${TEMP_DIR}/${pkg_name}-${version_f}-${arch_f}-bundle.apk"
 	local is_bundle=false
-	# if [ "$mode_arg" = module ] || [ "$mode_arg" = both ]; then
-	# 	if [ -f "$stock_bundle_apk" ]; then
-	# 		is_bundle=true
-	# 	elif [ "$dl_from" = apkmirror ]; then
-	# 		pr "Downloading '${table}' bundle from APKMirror"
-	# 		if dl_apkmirror "${args[apkmirror_dlurl]}" "$version" "$stock_bundle_apk" BUNDLE "" ""; then
-	# 			if (($(stat -c%s "$stock_apk") - $(stat -c%s "$stock_bundle_apk") > 10000000)); then
-	# 				pr "'${table}' bundle was downloaded successfully and will be used for the module"
-	# 				is_bundle=true
-	# 			else
-	# 				pr "'${table}' bundle was downloaded but will not be used"
-	# 			fi
-	# 		else
-	# 			pr "'${table}' bundle was not found"
-	# 		fi
-	# 	fi
-	# fi
 
 	if [ "${args[riplib]}" = true ]; then
 		p_patcher_args+=("--rip-lib x86_64 --rip-lib x86")
