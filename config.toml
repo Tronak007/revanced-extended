@@ -8,7 +8,7 @@ enable-magisk-update = true
 [YouTube]
 build-mode = "both"
 included-patches = "'Add splash animation' 'MaterialYou' 'Remove player controls background'"
-excluded-patches = "'Custom branding name YouTube'" 
+excluded-patches = "'Custom branding name YouTube' 'Announcements'"
 version = "beta"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 arch = "arm64-v8a"
