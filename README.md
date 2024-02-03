@@ -31,7 +31,7 @@ Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is schedu
 [**See the list of patches**](https://j-hc.github.io/rvmm-config-gen/)
 
  * Star the repo
- * [Fork the repo](https://github.com/AbakNacchan/revanced-extended/fork) or use it as a template
+ * Use the repo as a [template](https://github.com/AbakNacchan/revanced-extended/fork)
  * Customize [`config.toml`](./config.toml) using [rvmm-config-gen](https://j-hc.github.io/rvmm-config-gen/)
  * Run the build [workflow](../../actions/workflows/build.yml)
  * Grab your modules and APKs from [releases](../../releases)
