@@ -117,4 +117,4 @@ ui_print " "
 
 sleep 0.5
 
-ui_print "  No need to reboot your phone"
+ui_print "  You may want to reboot your phone."
