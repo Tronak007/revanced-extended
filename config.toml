@@ -25,4 +25,4 @@ excluded-patches = "'Custom branding name YouTube Music' 'Ambient mode switch'"
 [Twitter]
 apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter/"
 arch = "arm64-v8a"
-version = "beta"
+version = "latest"
