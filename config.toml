@@ -9,20 +9,20 @@ enable-magisk-update = true
 build-mode = "both"
 included-patches = "'Add splash animation' 'MaterialYou' 'Remove player controls background' 'Enable slide to seek'"
 excluded-patches = "'Custom branding name YouTube' 'Announcements' 'Enable debugging' 'Ambient mode switch'"
-version = "beta"
+version = "latest"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 arch = "arm64-v8a"
 apkmirror-arch = "arm64-v8a"
 
-# [Music]
-# build-mode = "both"
-# version = "latest"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-# apkmirror-arch = "arm64-v8a"
-# included-patches = "'Permanent shuffle' 'Permanent repeat'"
-# excluded-patches = "'Custom branding name YouTube Music' 'Ambient mode switch'"
+[Music]
+build-mode = "both"
+version = "latest"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+apkmirror-arch = "arm64-v8a"
+included-patches = "'Permanent shuffle' 'Permanent repeat'"
+excluded-patches = "'Custom branding name YouTube Music' 'Ambient mode switch'"
 
-# [Twitter]
-# apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter/"
-# arch = "arm64-v8a"
-#version = "latest"
+[Twitter]
+apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter/"
+arch = "arm64-v8a"
+version = "latest"
