@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: "adopt"
-          java-version: "20"
+          java-version: "21"
 
       - name: Checkout
         uses: actions/checkout@v4.1.1
@@ -63,7 +63,7 @@ jobs:
       - name: Get Date
         id: date
         run: |
-          echo "DATE=$(date +%Y%d%m)" >> "$GITHUB_OUTPUT"
+          echo "DATE=$(date +%Y.%d%m)" >> "$GITHUB_OUTPUT"
 
       - name: Upload modules to release
         uses: svenstaro/upload-release-action@2.7.0
@@ -72,7 +72,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./build/*
           release_name: ReVanced eXtended v${{ steps.date.outputs.DATE }}
-          tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
+          tag: v${{ steps.date.outputs.DATE }}
           file_glob: true
           overwrite: true
 
