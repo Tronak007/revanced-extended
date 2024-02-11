@@ -38,7 +38,7 @@ jobs:
       - name: Get Date
         id: date
         run: |
-          echo "DATE=$(date +%Y.%m.%d)" >> "$GITHUB_OUTPUT"
+          echo "DATE=$(date +%Y%m%d)" >> "$GITHUB_OUTPUT"
 
       - name: Get next version code
         id: next_ver_code
