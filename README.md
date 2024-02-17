@@ -1,5 +1,7 @@
 # ReVanced eXtended
 
+Unlike [ReVanced](https://github.com/abakNacchan/revanced-magisk-module/releases) build, this one will built with latest version available while maintaining its comptibility and main features e.g SponsorBlock. When the latest version is not compatile with the sources, the build will remain in latest compatible version.
+
 [![CI](https://github.com/AbakNacchan/revanced-extended/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/AbakNacchan/revanced-extended/actions/workflows/ci.yml)
 
 ## Extensive ReVanced eXtended Builder
