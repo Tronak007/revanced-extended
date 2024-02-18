@@ -38,7 +38,7 @@ if [ -d revanced-magisk-module ]; then
 		mv -f config.toml revanced-extended/config.toml
 	fi
 else
-	pr "Cloning revanced-extended-magisk-module."
+	pr "Cloning revanced-extended."
 	git clone https://github.com/AbakNacchan/revanced-extended --recurse --depth 1
 	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' revanced-extended/config.toml
 fi
@@ -69,7 +69,7 @@ for op in *; do
 	mv -f "${PWD}/${op}" ~/storage/downloads/revanced-extended/"${op}"
 done
 
-pr "Outputs are available in /sdcard/Download/revanced-extended-magisk-module folder"
+pr "Outputs are available in /sdcard/Download/revanced-extended folder"
 am start -a android.intent.action.VIEW -d file:///sdcard/Download/revanced-extended -t resource/folder
 sleep 2
 am start -a android.intent.action.VIEW -d file:///sdcard/Download/revanced-extended -t resource/folder
