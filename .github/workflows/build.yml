@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/setup-java@v4
         with:
-          distribution: "adopt"
+          distribution: "microsoft"
           java-version: "21"
 
       - name: Checkout
